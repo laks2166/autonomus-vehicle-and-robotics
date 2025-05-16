@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Autonomous Vehicle & Robotics Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin: 10px;
+      flex: 1 1 300px;
+    }
+    .camera-feed {
+      width: 100%;
+      height: 200px;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    .sensor-data {
+      font-size: 1.2em;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Autonomous Vehicle & Robotics Dashboard</h1>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Camera Feed</h2>
+      <div class="camera-feed" id="camera">
+        <!-- Simulated feed -->
+        <span>Live View (Simulated)</span>
+      </div>
+    </div>
+
+    <div class="card
